@@ -44,16 +44,16 @@ switch (number) {
 // console.log(sam);
 
 // 問題2. 1 A君とB君、それぞれの合計点数をコンソール画面に出力して下さい
-const a_sam = 80 + 90 + 60 + 85 + 100;
-console.log(a_sam);
+const score_a = 80 + 90 + 60 + 85 + 100;
+console.log(score_a);
 
-const b_sam = 40 + 30 + 50 + 25 + 60;
-console.log(b_sam);
+const score_b = 40 + 30 + 50 + 25 + 60;
+console.log(score_b);
 
 // 問題2. 2 A君とB君、それぞれの合計点数が300以上の場合、コンソール画面に「素晴らしい」と、どちらか片方が300以上の場合は、「普通」を、どちらも300点以上より下の場合は「頑張ろう」とコンソール画面に出力して下さい
-if (a_sam >= 300 && b_sam >= 300) {
+if (score_a >= 200 && score_b >= 200) {
   console.log("素晴らしい");
-} else if (a_sam >= 300 || b_sam >= 300) {
+} else if (score_a >= 200 || score_b >= 200) {
   console.log("普通");
 } else {
   console.log("頑張ろう");
@@ -102,8 +102,10 @@ switch (fortune) {
 // } else {
 //   console.log("丁度良い");
 // }
+
+// 参考資料を元にしてコードを記述した。
 const price = 1800;
 
-const feeling = (price <= 2000) ? "安い" : "高い" : "丁度良い";
+const feeling = (price > 2000) ? (price > 1000 ) ?  "安い" : "高い" : "丁度良い";
 
 console.log(feeling);
