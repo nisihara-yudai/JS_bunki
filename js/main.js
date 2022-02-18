@@ -104,8 +104,15 @@ switch (fortune) {
 // }
 
 // 参考資料を元にしてコードを記述した。
-const price = 1800;
+// const price = 2100;
 
-const feeling = (price > 2000) ? (price > 1000 ) ?  "安い" : "高い" : "丁度良い";
+// const feeling = (price < 1000 ) ? (price > 2000) ? "安い" : "高い" : "丁度良い";
+
+// console.log(feeling);
+
+// 解答を見てコードを記述した
+const price = 2100;
+
+const feeling = (price < 1000 ) ? "安い" :(price > 2000) ? "高い" : "丁度良い";
 
 console.log(feeling);
